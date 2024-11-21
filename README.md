@@ -1,4 +1,4 @@
-# Serverless Repository
+# Serverless
 
 This repository contains the implementation of AWS Lambda functions for serverless operations in our application. The repository is designed to handle account creation workflows, including email verification via SNS integration.
 
