@@ -18,13 +18,6 @@ This repository contains the implementation of AWS Lambda functions for serverle
 
 ---
 
-## Repository Structure
-
-serverless/ ├── src/ │ ├── functions/ │ │ ├── emailVerification/ │ │ │ ├── handler.js # Main Lambda function code │ │ │ ├── utils.js # Helper utilities for the Lambda function │ │ │ ├── config.json # Configuration for environment-specific variables │ ├── tests/ │ │ ├── emailVerification.test.js # Jest tests for Lambda function │ ├── package.json # Node.js dependencies │ ├── README.md # Documentation ├── .gitignore # Git ignore file ├── serverless.yml # Serverless Framework configuration
-
-
----
-
 ## Development Workflow
 
 1. **Fork This Repository**:
