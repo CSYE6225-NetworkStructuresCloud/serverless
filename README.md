@@ -60,6 +60,10 @@ Deploy with Serverless Framework:
     serverless deploy
 
 
+## import certificate
+
+aws acm import-certificate `    --certificate file://"C:\Users\Amruta\OneDrive\Documents\Northeastern University\Semester 2\Cloud\Assignments\Assignment 9\demo_webapp-csye_me\certificate-base64.pem.crt" `    --private-key file://"C:\Users\Amruta\OneDrive\Documents\Northeastern University\Semester 2\Cloud\Assignments\Assignment 9\webapp-base64.key" `    --certificate-chain file://"C:\Users\Amruta\OneDrive\Documents\Northeastern University\Semester 2\Cloud\Assignments\Assignment 9\demo_webapp-csye_me\certificate_chain-base64.pem" `    --region us-east-1 --profile demo
+
 # Lambda Function Details
 
 ## Email Verification
@@ -67,3 +71,5 @@ Trigger: AWS SNS message indicating new user creation.
 ## Functionality:
 Sends a verification email with a time-limited link (2 minutes expiration).
 Updates RDS database with email tracking information.
+
+
