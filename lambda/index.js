@@ -64,3 +64,63 @@ exports.handler = async (event) => {
     throw new Error("Lambda processing failed");
     }
 };
+
+
+
+
+
+
+
+// const sgMail = require("@sendgrid/mail");
+
+// // Set SendGrid API Key from environment variables
+// sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+
+// exports.handler = async (event) => {
+//   try {
+//     // 1. Parse the incoming SNS message
+//     const { email, token } = JSON.parse(event.Records[0].Sns.Message);
+
+//     // 2. Generate the verification link
+//     const verificationLink = generateVerificationLink(email, token);
+
+//     // 3. Create email content
+//     const emailOptions = createEmailContent(email, verificationLink);
+
+//     // 4. Send the email
+//     await sendEmail(emailOptions);
+
+//     console.log(`Verification email sent to ${email}`);
+//     return { statusCode: 200, body: JSON.stringify({ message: "Email sent successfully" }) };
+//   } catch (error) {
+//     console.error("Error sending email:", error);
+//     throw new Error("Lambda processing failed");
+//   }
+// };
+
+// // Helper function to generate the verification link
+// function generateVerificationLink(email, token) {
+//   return `https://${process.env.domain_name}/v1/verify?user=${encodeURIComponent(email)}&token=${token}`;
+// }
+
+// // Helper function to create email content
+// function createEmailContent(email, verificationLink) {
+//   return {
+//     to: email,
+//     from: process.env.EMAIL_FROM,
+//     subject: "Verify Your Email Address to Complete Registration",
+//     text: `Please verify your email by clicking the link: ${verificationLink}`,
+//     html: `
+//       <div>
+//         <p>Thank you for signing up!</p>
+//         <p>Please verify your email address by clicking the link below:</p>
+//         <a href="${verificationLink}">Verify Email</a>
+//       </div>
+//     `,
+//   };
+// }
+
+// // Helper function to send an email using SendGrid
+// async function sendEmail(emailOptions) {
+//   await sgMail.send(emailOptions);
+// }
