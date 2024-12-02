@@ -62,7 +62,7 @@ Deploy with Serverless Framework:
 
 ## import certificate
 
-aws acm import-certificate `    --certificate file://"C:\Users\Amruta\OneDrive\Documents\Northeastern University\Semester 2\Cloud\Assignments\Assignment 9\demo_webapp-csye_me\certificate-base64.pem.crt" `    --private-key file://"C:\Users\Amruta\OneDrive\Documents\Northeastern University\Semester 2\Cloud\Assignments\Assignment 9\webapp-base64.key" `    --certificate-chain file://"C:\Users\Amruta\OneDrive\Documents\Northeastern University\Semester 2\Cloud\Assignments\Assignment 9\demo_webapp-csye_me\certificate_chain-base64.pem" `    --region us-east-1 --profile demo
+aws acm import-certificate `    --certificate file://"C:\Users\Kartik\SSL\certificate-base64.pem.crt" `    --private-key file://"C:\Users\Kartik\SSL\webapp-base64.key" `    --certificate-chain file://"C:\Users\Kartik\SSL\certificate_chain-base64.pem" `    --region us-east-1 --profile demo
 
 # Lambda Function Details
 
